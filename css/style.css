@@ -44,7 +44,7 @@ body{
   display: flex;
   align-items: center;
 }
-.menu-list a{
+.menu-list nav a{
   text-decoration: none;
   color: #2b2a2c;
   text-transform: uppercase;
@@ -53,9 +53,10 @@ body{
   position: relative;
   outline: none;
 }
-.menu-list a:hover{ color: #3b3a3c }
-.menu-list a:after{
-  content: "";z-index: -1;
+.menu-list nav a:hover{ color: #3b3a3c }
+.menu-list nav a:after{
+  content: "";
+  z-index: -1;
   position: absolute;
   top: -10%;
   left: -5px;
@@ -66,8 +67,8 @@ body{
   background: #cccccc55;
   transition: .3s ease;
 }
-.menu-list a:hover:after,
-.menu-list a:focus:after{
+.menu-list nav a:hover:after,
+.menu-list nav a:focus:after{
   width: 110%;
 }
 .btn{
